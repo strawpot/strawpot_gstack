@@ -43,6 +43,26 @@ Parse these from the user's request:
 
 ## Pre-flight
 
+### 0. Verify browse binary (mandatory)
+
+Before anything else, verify the `browse` binary is available. **This check is mandatory and must run before any other pre-flight step.** If the binary is missing, stop immediately and tell the user how to install it — do not proceed and fail later.
+
+```bash
+if command -v browse &>/dev/null; then
+  echo "READY: browse binary found"
+else
+  echo "ERROR: browse binary not found in PATH"
+  echo "The browser-qa-engineer role requires the browse CLI binary."
+  echo "Install options:"
+  echo "  1. Build from gstack: cd gstack && bun build browse.ts --compile --outfile browse"
+  echo "  2. Download from gstack releases (if available)"
+  echo "  3. Add the gstack bin directory to your PATH"
+  exit 1
+fi
+```
+
+If this check fails, do not continue. Report the error to the user with the installation options above and stop.
+
 ### 1. Check working tree (full mode only)
 
 In full mode, verify a clean working tree (`git status --porcelain`). If dirty, ask the user via denden whether to commit, stash, or abort, since each bug fix needs its own atomic commit. Follow the `git-workflow` skill for all git operations. Report-only mode skips this.
