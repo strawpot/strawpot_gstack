@@ -1,5 +1,6 @@
 ---
 name: design-review-methodology
+displayName: Design Review Methodology
 description: "Structured design review methodology for evaluating UI/UX quality in plans and specifications. Use when reviewing a plan that includes UI components, auditing design completeness before implementation, checking for AI-generated design patterns (slop), evaluating information architecture, interaction states, accessibility, or responsive design in any plan or spec. Also use when asked to 'review the design', 'check the UX', 'audit the UI plan', 'is this design complete', or when a role like visual-qa-reviewer or design-system-architect needs a systematic design evaluation framework. Do NOT use for live visual testing of running applications (use browse skill), backend-only changes with no UI scope, or general code review without design dimensions."
 metadata:
   strawpot: {}

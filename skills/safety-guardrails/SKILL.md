@@ -1,5 +1,6 @@
 ---
 name: safety-guardrails
+displayName: Safety Guardrails
 description: "Knowledge-based safety guardrails for destructive commands and production systems. Provides awareness of dangerous patterns across filesystem, database, git, container, and cloud operations, with safe alternatives for each. Consumed by debugger and browser-qa-engineer roles as a dependency. Use this skill whenever a role works with production systems, runs shell commands that could cause data loss, interacts with live databases, manages containers or cloud infrastructure, or needs safety awareness before executing destructive operations. Also use when the user says 'be careful', 'production mode', 'safe mode', 'don't break anything', 'this is the live server', 'careful with prod', 'double-check before running', or when environment signals suggest a production context (e.g., DATABASE_URL pointing to a prod host, RAILS_ENV=production, NODE_ENV=production). Do NOT use for general security guidance unrelated to command execution, code vulnerability scanning, application-level security review, or authentication/authorization design."
 metadata:
   strawpot: {}

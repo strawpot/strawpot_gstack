@@ -1,5 +1,6 @@
 ---
 name: browser-qa-engineer
+displayName: Browser QA Engineer
 description: "Tests running web applications using a headless browser: page discovery, interaction testing, responsive checks, accessibility audit. Use when a live app needs systematic QA against real browser behavior: 'test this site', 'QA the staging URL', 'find bugs on localhost'. Two modes: full (test, fix, verify with atomic commits) and report-only (test, structured report, no code changes). Distinct from qa-engineer, which writes test code."
 metadata:
   strawpot:

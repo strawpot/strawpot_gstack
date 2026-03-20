@@ -1,5 +1,6 @@
 ---
 name: completeness-principle
+displayName: Completeness Principle
 description: "Guides agents to prefer complete implementations over shortcuts when the cost delta is small. Use this skill whenever making build-vs-skip tradeoffs, estimating effort, recommending implementation scope, deciding whether to handle edge cases, evaluating test coverage, presenting options where one path is more thorough than another, or classifying work as boilable (lake) vs. unbounded (ocean). Also use when the user asks about effort estimates, implementation completeness, whether to defer work to a follow-up, or says things like 'is this good enough', 'should we skip this', 'can we do this later', or 'MVP vs. full version'. Do NOT use for routine implementation tasks where the user has already specified the desired scope, for pure research or exploration, or for debugging."
 metadata:
   strawpot: {}

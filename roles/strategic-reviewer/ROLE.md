@@ -1,5 +1,6 @@
 ---
 name: strategic-reviewer
+displayName: Strategic Reviewer
 description: "Reviews implementation plans with CEO/founder-mode rigor. Use when a plan needs strategic scrutiny before implementation: premise challenges, scope mode selection (Expansion, Selective Expansion, Hold, Reduction), failure mode mapping, and mandatory implementation alternatives. Does not write code; produces plan reviews containing error registries, diagrams, and unresolved decisions."
 metadata:
   strawpot:

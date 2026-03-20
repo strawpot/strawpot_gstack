@@ -1,5 +1,6 @@
 ---
 name: browser-cookies
+displayName: Browser Cookies
 description: "Import cookies from real Chromium browsers (Comet, Chrome, Arc, Brave, Edge) into the headless browse session for authenticated testing. Use when asked to 'import cookies', 'login to the site', 'authenticate the browser', 'set up cookies', 'use my browser session', 'use my logged-in session', or 'I need to be logged in'. Also trigger when testing requires authentication, the user mentions needing to be logged in for QA, a page returns a login redirect during browse commands, or you encounter an auth wall while browsing. Do NOT use for setting individual cookies manually, clearing/deleting cookies, or managing cookie consent banners, as those are direct browse commands."
 metadata:
   strawpot:

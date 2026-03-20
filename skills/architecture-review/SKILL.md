@@ -1,5 +1,6 @@
 ---
 name: architecture-review
+displayName: Architecture Review
 description: "Structured engineering architecture review for plans, designs, and implementation proposals. Use when asked to review architecture, do an engineering review, evaluate a plan, lock in a design, assess technical approach, poke holes in a proposal, sanity check a design before building, check if something is over-engineered, or 'does this design make sense'. Also use proactively when a role is about to start implementation on a non-trivial plan, to catch architecture issues before code is written. Consumed by strategic-reviewer and design-system-architect roles. Covers scope challenge, system design, code quality, test coverage, performance, and failure modes. Do NOT use for code review of already-written code (use a code-reviewer role instead) or for UI/UX design review (use design-review-methodology instead)."
 metadata:
   strawpot:

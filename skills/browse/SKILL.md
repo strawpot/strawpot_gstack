@@ -1,5 +1,6 @@
 ---
 name: browse
+displayName: Browse
 description: "Command reference and usage patterns for headless browser interaction. Covers navigation, element interaction, snapshot diffing, responsive testing, form filling, dialog handling, cookie management, and visual evidence gathering. Use when you need to test a feature, verify a deployment, dogfood a user flow, take a screenshot, assert element states, diff before/after actions, test responsive layouts, or file a bug with visual evidence. Also use when asked to 'open in browser', 'test the site', 'take a screenshot', 'check the page', 'dogfood this', 'browse to', 'navigate to', 'check if the page works', or 'verify the UI'. This skill is a methodology and command reference; the browse binary must be installed separately. Do NOT use for API testing, backend-only verification, or curl/wget HTTP requests."
 metadata:
   strawpot:

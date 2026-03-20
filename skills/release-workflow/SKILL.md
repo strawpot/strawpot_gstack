@@ -1,5 +1,6 @@
 ---
 name: release-workflow
+displayName: Release Workflow
 description: "Structured release ceremony: merge base, run tests, review diff, bump version, update changelog, create bisectable commits, push, and create PR, all automated. Use when the user wants to 'ship', 'release', 'cut a release', 'ship it', 'let's ship', 'ready to go', 'finalize this', or says code is 'ready to ship'. Also trigger when asked to finalize a feature branch with full pre-flight checks, or when the user indicates they are done coding and want to push. Do NOT use for simple PR creation without the release ceremony (use github-prs). Do NOT use for basic git operations like branching or committing (use git-workflow)."
 metadata:
   strawpot:
