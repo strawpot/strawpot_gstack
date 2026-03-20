@@ -1,6 +1,5 @@
 ---
 name: release-documentation
-displayName: Release Documentation
 description: "Post-ship documentation sync: reads all project docs, cross-references the diff, updates README/ARCHITECTURE/CONTRIBUTING/CLAUDE.md to match what shipped, polishes CHANGELOG voice, cleans up TODOs, and optionally bumps VERSION. Use when asked to 'update the docs', 'sync documentation', 'document this release', 'post-ship docs', 'run a doc sweep', 'docs are stale', 'make sure the docs match the code', or when a PR has been created and documentation needs to catch up with the code changes. Also use after any ship/release workflow completes. Consumed by retro-facilitator and release-related roles after a ship cycle. Do NOT use for writing new documentation from scratch, generating new CHANGELOG entries from scratch, general writing tasks unrelated to a code change, or creating new markdown files."
 metadata:
   strawpot:
