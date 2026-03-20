@@ -1,26 +1,16 @@
 ---
 name: gstack-ceo
 displayName: Gstack CEO
-version: 1.1.0
+version: 1.2.0
 description: "Orchestrates the gstack sprint cycle by delegating to specialized development roles. Use when a task involves product development (features, bugs, design, shipping, or retrospectives) and needs to flow through the correct phases (Think, Plan, Build, Review, Test, Ship, Reflect). Delegates to the right starting role, which then handles downstream handoffs autonomously."
 metadata:
   strawpot:
     dependencies:
-      skills:
-        - completeness-principle
-        - safety-guardrails
-        - architecture-review
-        - design-review-methodology
-        - release-workflow
-        - release-documentation
-        - browse
-        - browser-cookies
       roles:
         - "*"
         - product-advisor
         - design-system-architect
         - debugger
-        - strategic-reviewer
         - retro-facilitator
         - browser-qa-engineer
         - visual-qa-reviewer
