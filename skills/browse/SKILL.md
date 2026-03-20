@@ -21,22 +21,59 @@ State persists between calls (cookies, tabs, login sessions).
 This skill documents how to use the browse binary. The binary itself must be installed
 separately. Throughout this document, `$BROWSE` refers to the path to the browse binary.
 
-Before first use, verify the binary is available:
+**Before first use, verify the binary is available:**
 
 ```bash
 if command -v browse &>/dev/null; then
   BROWSE=browse
   echo "READY: $BROWSE"
 else
-  echo "NEEDS_SETUP: browse binary not found in PATH"
+  echo "ERROR: browse binary not found in PATH"
+  echo "See installation options below."
+  exit 1
 fi
 ```
 
-**Installation options** (choose one based on your environment):
+### Installation Options
 
-1. **Vendor the gstack binary.** Copy the compiled browse binary from a gstack installation
-2. **Build a StrawPot-native Playwright wrapper.** Create a lightweight CLI around Playwright's headless Chromium
-3. **Use MCP browser tools.** Connect to an MCP server that exposes browser capabilities
+**Option 1 — Build from gstack source (recommended):**
+
+```bash
+# Requires Bun (https://bun.sh)
+cd /path/to/gstack
+bun build browse.ts --compile --outfile browse
+# Copy the binary to somewhere in your PATH
+cp browse /usr/local/bin/browse
+```
+
+**Option 2 — Download from gstack releases:**
+
+Check the [gstack releases page](https://github.com/garrytan/gstack/releases) for pre-built
+binaries. Download the binary for your platform and place it in your PATH.
+
+**Option 3 — Add gstack bin to PATH:**
+
+If you already have a gstack installation with the compiled binary, add its directory to PATH:
+
+```bash
+export PATH="/path/to/gstack:$PATH"
+```
+
+Add this to your shell profile (`~/.bashrc`, `~/.zshrc`) to persist across sessions.
+
+**Option 4 — Use MCP browser tools:**
+
+Connect to an MCP server that exposes browser capabilities as an alternative to the native binary.
+
+### Verifying Installation
+
+After installation, confirm it works:
+
+```bash
+browse status   # should report server health
+browse goto https://example.com
+browse text     # should print page content
+```
 
 Once installed, set `$BROWSE` to the binary path and all commands below will work.
 
