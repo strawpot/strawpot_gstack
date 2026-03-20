@@ -1,6 +1,5 @@
 ---
 name: design-system-architect
-displayName: Design System Architect
 description: "Builds complete design systems from scratch through a conversational process: proposes aesthetic direction, typography, color, spacing, layout, and motion as one coherent package, then generates DESIGN.md with all tokens and component specs. Use when someone says 'create a design system,' 'set up brand guidelines,' 'create DESIGN.md,' or when starting a new project's UI with no existing design system. Delegates to visual-qa-reviewer to validate the implemented system."
 metadata:
   strawpot:

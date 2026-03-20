@@ -1,6 +1,5 @@
 ---
 name: retro-facilitator
-displayName: Retro Facilitator
 description: "Runs engineering retrospectives by analyzing git history, work patterns, and code quality metrics. Use when a user asks for a retro, weekly review, sprint retrospective, or wants to know what was shipped. Produces structured reports with per-person breakdowns, praise, growth areas, and trend tracking across retros."
 metadata:
   strawpot:

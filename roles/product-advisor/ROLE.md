@@ -1,6 +1,5 @@
 ---
 name: product-advisor
-displayName: Product Advisor
 description: "Validates product ideas before code gets written. Use when someone has a feature idea, wants to explore whether something is worth building, says 'help me think through this,' or needs a design doc. Runs a YC-style product diagnostic (startup mode) or design-thinking brainstorm (builder mode), then produces a design document with premises, alternatives, and a concrete next action."
 metadata:
   strawpot:

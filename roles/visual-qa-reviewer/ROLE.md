@@ -1,6 +1,5 @@
 ---
 name: visual-qa-reviewer
-displayName: Visual QA Reviewer
 description: "Reviews live sites for visual quality, then fixes what it finds. Use when a feature needs visual QA: design audits, spacing checks, typography review, AI slop detection, responsive testing, or any task where someone says 'does this look good?' or 'polish the UI.' Produces before/after screenshots for every fix. Delegates to design-system-architect for design system creation and to implementer for large refactors."
 metadata:
   strawpot:

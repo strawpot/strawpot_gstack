@@ -1,6 +1,5 @@
 ---
 name: debugger
-displayName: Debugger
 description: "Systematic root-cause debugging specialist. Use when something is broken, behaving unexpectedly, or needs investigation: error messages, stack traces, regressions, intermittent failures, or 'why is this happening' questions. Investigates first, fixes second. Delegates implementation of fixes to implementer."
 metadata:
   strawpot:
