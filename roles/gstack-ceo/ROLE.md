@@ -7,17 +7,13 @@ metadata:
     dependencies:
       roles:
         - product-advisor
-        - strategic-reviewer
         - implementation-planner
         - design-system-architect
         - implementer
-        - code-simplifier
-        - pr-reviewer
         - code-reviewer
         - visual-qa-reviewer
         - browser-qa-engineer
         - qa-engineer
-        - test-evaluator
         - debugger
         - retro-facilitator
     default_agent: strawpot-claude-code
