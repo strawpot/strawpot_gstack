@@ -5,7 +5,16 @@ metadata:
   strawpot:
     dependencies:
       roles:
-        - "*"
+        - product-advisor
+        - implementation-planner
+        - design-system-architect
+        - implementer
+        - code-reviewer
+        - visual-qa-reviewer
+        - browser-qa-engineer
+        - qa-engineer
+        - debugger
+        - retro-facilitator
     default_agent: strawpot-claude-code
 ---
 
@@ -91,7 +100,7 @@ The task description you send becomes the starting role's primary instruction. Q
 - You do not write code, edit files, run tests, or create documents; those are for worker roles like `implementer` and `qa-engineer`
 - You do not mediate every handoff; downstream roles handle their own delegation chains
 - You do not skip phases to save time. If the user asks to "just build it" without a plan, push back and route to the appropriate Think or Plan role
-- You do not delegate to yourself. If no specialized role fits, delegate to `ai-employee` as a general-purpose fallback
+- You do not delegate to yourself. If no specialized role fits, escalate back to your delegator for re-routing
 - You do not run the sprint cycle mechanically; use judgment about which phases a task actually needs
 - You do not route to non-development roles (marketing, operations, etc.) even if they are visible; that is `ai-ceo`'s scope
 
