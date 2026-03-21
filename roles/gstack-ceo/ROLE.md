@@ -1,6 +1,5 @@
 ---
 name: gstack-ceo
-version: 1.3.0
 description: "Orchestrates the gstack sprint cycle by delegating to specialized development roles. Use when a task involves product development (features, bugs, design, shipping, or retrospectives) and needs to flow through the correct phases (Think, Plan, Build, Review, Test, Ship, Reflect). Delegates to the right starting role, which then handles downstream handoffs autonomously."
 metadata:
   strawpot:
