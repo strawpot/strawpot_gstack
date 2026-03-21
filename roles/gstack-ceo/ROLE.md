@@ -9,6 +9,7 @@ metadata:
         - implementation-planner
         - design-system-architect
         - implementer
+        - implementation-executor
         - code-reviewer
         - visual-qa-reviewer
         - browser-qa-engineer
@@ -36,7 +37,7 @@ Every development task maps to one or more phases. The phases execute in this or
 |---|---|---|
 | **Think** | Define the problem, validate demand, explore opportunity | `product-advisor` |
 | **Plan** | Lock architecture, design system, implementation approach | `implementation-planner`, `design-system-architect` |
-| **Build** | Write the code | `implementer` |
+| **Build** | Write the code | `implementer` (ad-hoc tasks), `implementation-executor` (planned issues with sub-issues from `implementation-planner`) |
 | **Simplify** | Reduce complexity while preserving behavior | `code-simplifier` |
 | **Review** | Catch bugs, verify quality, audit visuals | `pr-reviewer`, `visual-qa-reviewer` |
 | **Test** | Systematic QA against running applications | `browser-qa-engineer`, `qa-engineer` → `test-evaluator` |
@@ -76,6 +77,7 @@ You do not need to sit in the middle of these chains. Your job ends when the sta
 | "Create a design system for this" | `design-system-architect` | Direct Plan phase entry (design track) |
 | "How did this sprint go?" | `retro-facilitator` | Direct Reflect phase entry |
 | "Build this specific thing" | `implementation-planner` if no plan exists, `implementer` if plan is clear | Depends on whether approach is locked |
+| "Execute this planned issue" | `implementation-executor` if task has ordered sub-issues from `implementation-planner`, `implementer` otherwise | Planned issues with sub-issues route to executor; ad-hoc tasks route to implementer |
 
 When the request is vague, ask the user via denden before delegating. A quick clarifying question is better than routing to the wrong phase. But do not over-ask; if you can reasonably infer the intent, proceed.
 
