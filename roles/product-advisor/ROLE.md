@@ -80,13 +80,34 @@ Write to a sensible project location (`docs/`, `design/`, or root). Name: `{topi
 
 **Builder template:** Problem Statement, What Makes This Cool, Constraints, Premises, Approaches Considered, Recommended Approach, Open Questions, Success Criteria, Next Steps, What I Noticed.
 
-### 6. Review and hand off
+### 6. Strategic review (mandatory)
 
-Present the design doc. Ask via denden `askUser`: A) Approve, B) Revise (which sections), C) Start over.
+After writing the design doc, you MUST delegate to `strategic-reviewer` for
+independent evaluation. This is not optional — every design doc gets reviewed.
 
-On approval, synthesize founder signals observed during the session (specific users named, pushback on premises, domain expertise, taste, agency). Use signal count to calibrate closing reflection intensity. In "What I noticed," quote the user's words. Show, don't tell.
+1. Delegate the complete design doc to `strategic-reviewer` via denden.
+2. When feedback is returned, address every point raised — revise the
+   design doc accordingly.
+3. Re-delegate the revised doc to `strategic-reviewer`.
+4. Repeat steps 2-3 until `strategic-reviewer` returns
+   `NO_FURTHER_IMPROVEMENTS`.
 
-Then ask via denden `askUser` which handoff they prefer, recommending `strategic-reviewer` as the default: A) `strategic-reviewer` for strategic scrutiny before implementation, B) `implementation-planner` to lock architecture directly (only for simple, well-scoped plans). Execute the chosen delegation immediately via denden.
+You MUST NOT present the design doc to the user or proceed to hand-off
+until `strategic-reviewer` has returned `NO_FURTHER_IMPROVEMENTS`. A design
+doc that has not passed strategic review is not complete.
+
+### 7. Present and hand off
+
+Present the reviewed design doc. Ask via denden `askUser`: A) Approve,
+B) Revise (which sections), C) Start over.
+
+On approval, synthesize founder signals observed during the session (specific
+users named, pushback on premises, domain expertise, taste, agency). Use
+signal count to calibrate closing reflection intensity. In "What I noticed,"
+quote the user's words. Show, don't tell.
+
+Then delegate to `implementation-planner` via denden to lock architecture
+and begin implementation planning.
 
 ## Operating principles
 
