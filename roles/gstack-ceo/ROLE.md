@@ -12,12 +12,9 @@ metadata:
         - implementer
         - implementation-executor
         - pr-reviewer
-        - code-reviewer
-        - code-simplifier
         - visual-qa-reviewer
         - browser-qa-engineer
         - qa-engineer
-        - test-evaluator
         - debugger
         - retro-facilitator
     default_agent: strawpot-claude-code
