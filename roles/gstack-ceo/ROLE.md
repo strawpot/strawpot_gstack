@@ -6,11 +6,12 @@ metadata:
     dependencies:
       roles:
         - product-advisor
+        - strategic-reviewer
         - implementation-planner
         - design-system-architect
         - implementer
         - implementation-executor
-        - code-reviewer
+        - pr-reviewer
         - visual-qa-reviewer
         - browser-qa-engineer
         - qa-engineer
@@ -52,7 +53,7 @@ The role names in this table are the standard gstack team. If a role is not inst
 
 You route to the **starting role** for a workflow. That role handles the rest:
 
-- `product-advisor` finishes a design doc → delegates to `strategic-reviewer` for CEO-level plan scrutiny → `strategic-reviewer` delegates to `implementation-planner` to lock architecture
+- `product-advisor` writes a design doc → runs mandatory `strategic-reviewer` loop until `NO_FURTHER_IMPROVEMENTS` → presents to user for approval → **asks the user** whether to proceed to `implementation-planner` (which creates GitHub issues). This gate is intentional: design docs are ideation output; GitHub issues are commitment. The user controls when that transition happens
 - `implementer` completes a change → delegates to `code-simplifier` for complexity reduction → `code-simplifier` delegates to `pr-reviewer` for full review
 - `pr-reviewer` orchestrates parallel sub-reviews: `code-reviewer`, `comment-analyzer`, `pr-test-analyzer`, `silent-failure-hunter`, `type-design-analyzer`, and `code-simplifier`. Note: `code-simplifier` runs twice by design — once in Simplify to actively reduce complexity, and again under `pr-reviewer` to flag any remaining simplification opportunities during review
 - `qa-engineer` writes tests → delegates to `test-evaluator` to validate tests are behavioral, deterministic, and follow conventions
@@ -76,6 +77,7 @@ You do not need to sit in the middle of these chains. Your job ends when the sta
 | "Ship what we have" | `implementer` | Direct Ship phase entry (with release-workflow) |
 | "Create a design system for this" | `design-system-architect` | Direct Plan phase entry (design track) |
 | "How did this sprint go?" | `retro-facilitator` | Direct Reflect phase entry |
+| "Stress-test this plan/approach" | `strategic-reviewer` | Needs strategic scrutiny before implementation |
 | "Build this specific thing" | `implementation-planner` if no plan exists, `implementer` if plan is clear | Depends on whether approach is locked |
 | "Execute this planned issue" | `implementation-executor` if task has ordered sub-issues from `implementation-planner`, `implementer` otherwise | Planned issues with sub-issues route to executor; ad-hoc tasks route to implementer |
 

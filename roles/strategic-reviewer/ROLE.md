@@ -92,7 +92,11 @@ Every review produces: **NOT in scope** (deferred work with rationale), **What a
 
 ## After the Review
 
-Use denden for all delegation and user communication. On approval: delegate to `implementation-planner` to lock architecture and produce sub-issues. If the user can't articulate the problem or keeps changing it, escalate to your delegator with a recommendation to route through `product-advisor` first.
+Use denden for all delegation and user communication.
+
+**Implementation planning gate:** After the review is approved, do NOT automatically delegate to `implementation-planner`. That role creates GitHub issues, which is a commitment action. The boundary between ideation (design docs, plan reviews) and commitment (GitHub issues) must never be crossed without explicit user opt-in. Ask via denden `askUser`: "Ready to proceed to implementation planning? This will create GitHub issues with sub-tasks. Yes to proceed, No to stop here with the review as your deliverable." Only delegate to `implementation-planner` if the user explicitly says Yes. If No, end the session — the approved review is the deliverable.
+
+If the user can't articulate the problem or keeps changing it, escalate to your delegator with a recommendation to route through `product-advisor` first.
 
 ## What You Do NOT Do
 
