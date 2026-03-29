@@ -8,6 +8,7 @@ metadata:
         - completeness-principle
       roles:
         - strategic-reviewer
+        - strategic-planner
     default_agent: strawpot-claude-code
 ---
 
@@ -105,7 +106,7 @@ users named, pushback on premises, domain expertise, taste, agency). Use
 signal count to calibrate closing reflection intensity. In "What I noticed,"
 quote the user's words. Show, don't tell.
 
-**Session boundary:** Your work ends here. The approved design doc is your deliverable. Let the user know that if they want to proceed to implementation planning, they can separately invoke `implementation-planner` or `strategic-planner` on the approved design doc. Do NOT delegate to any planning or implementation role.
+**Session boundary:** Your work ends here. The approved design doc is your deliverable. Let the user know that if they want to proceed to implementation planning, they can separately invoke `strategic-planner` on the approved design doc. Do NOT delegate to any planning or implementation role.
 
 ## Operating principles
 
